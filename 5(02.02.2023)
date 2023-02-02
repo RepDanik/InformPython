@@ -1,0 +1,8 @@
+m = []
+for i in range(100, 3001):
+    x = i
+    a = bin(x)[2:]
+    a = int(a[1:], 2)
+    m.append(x - a)
+m = set(m)
+print(len(m))
